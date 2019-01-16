@@ -1,0 +1,296 @@
+﻿/*Horizontal Orientation CSS*/
+.jscarousal-horizontal
+{
+	width: 750px;
+	height: 340px;
+	background-color: #121212;
+	border: solid 1px #7A7677;
+	margin: 0;
+	padding: 22px 8px 22px 8px;
+	position: relative; /*overflow: hidden;*/
+	top:-20px;
+	left:-20px;
+}
+.jscarousal-horizontal-back, .jscarousal-horizontal-forward
+{
+	float: left;
+	width: 25px;
+	height: 98px;
+	background-color: #121212;
+	color: White;
+	position: relative;
+	top: 35%;
+	cursor: pointer;
+}
+.jscarousal-horizontal-back
+{
+	background-image: url(left_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.jscarousal-horizontal-forward
+{
+	background-image: url(right_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+}
+.jscarousal-contents-horizontal
+{
+	width: 700px;
+	height: 330px;
+	float: left;
+	position: relative;
+	top: 10px;
+	overflow: hidden;
+}
+.jscarousal-contents-horizontal > div
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.jscarousal-contents-horizontal > div > div
+{
+	float: left;
+	margin-left: 8px;
+	margin-right: 8px;
+	height: 100%;
+	width: 123px;
+	overflow: hidden;
+}
+
+.jscarousal-contents-horizontal > div > div > #placetaker
+{
+	height: 256px;
+	background: rgb(16, 16, 16);
+}
+
+.jscarousal-contents-horizontal > div > div > #placetaker> video
+{
+	
+}
+
+.jscarousal-contents-horizontal img
+{
+	width: 120px;
+	height: 250px;
+	border: solid 1px #7A7677;
+}
+/*Horizontal Orientation CSS Ends*/
+
+/*Vertical Orientation CSS Starts*/
+.list
+{
+	
+	height: 100%;
+	
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	left:19px;
+
+}
+.jscarousal-vertical-back, .jscarousal-vertical-forward
+{
+	width: 100%;
+	height: 30px;
+	background-color: #121212;
+	color: White;
+	position: relative;
+	cursor: pointer;
+	z-index:100;
+}
+.jscarousal-vertical-back
+{
+	background-image: url(top_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.jscarousal-vertical-forward
+{
+	background-image: url(bottom_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.jscarousal-contents-vertical
+{
+	overflow: hidden;
+	width: 100%;
+	height: 92.7%;
+}
+.jscarousal-contents-vertical > div
+{
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+}
+.jscarousal-contents-vertical > div > div
+{
+	width: 80%;
+	height: 30%;
+	margin: 2px;
+	margin-left: 10%;
+	overflow:hidden;
+}
+
+.jscarousal-contents-vertical > div > div > div .thumbnail-title
+{
+	text-align:center;
+	color: #7A7677;
+	font-weight: bold;
+	display: block;
+	width:100%;
+	height:40px;
+	position:relative;
+	left:0px;
+	top:0px;
+	word-wrap:break-word;
+	padding: 2px 2px 2px 0px;
+}
+
+.jscarousal-contents-vertical > div > div > div .thumbnail-title  > b
+{
+	color: #7A7677;
+	font-weight: bold;
+	display: block;
+	max-width:800px;
+	word-wrap:break-word;
+	padding: 2px 2px 2px 0px;
+}
+
+.jscarousal-contents-vertical > div > div > div .thumbnail-body
+{
+	color: #7A7677;
+	font-weight: normal;
+	position: relative;
+	float: right;
+	top:0px;
+	left: 0px;
+	height:161px;
+	width: 100%;
+	font-size: 11px;
+	text-align: left;
+	display: block;
+	word-wrap:break-word;
+	padding: 2px 2px 2px 0px;
+}
+
+.jscarousal-contents-vertical > div > div > div .thumbnail-body> b
+{
+	float: left;
+	width: 76%;
+	padding: 2px 2px 2px 0px;
+	position:realtive;
+	margin-left: 1%;
+}
+
+.jscarousal-contents-vertical > div > div span
+{
+	display: block;
+	width: 340px;
+	height: 30%;
+	position: relative;
+	float: right;
+	top:0px;
+	left: 0px;
+	overflow: hidden;
+}
+.jscarousal-contents-vertical .j  a
+{
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	background: none repeat scroll 0% 0% rgba(68, 121, 186,0.2);
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	border: 1px solid rgb(32, 83, 141);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.jscarousal-contents-vertical > div > div  a
+{
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 0%;
+	width: 15%;
+	height: 7%;
+	left: 34%;
+	background: none repeat scroll 0% 0% rgb(68, 121, 186);
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	border: 1px solid rgb(32, 83, 141);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.j>a>video
+{
+	
+	width: 100%;
+	height: auto ;
+	max-height:100%;
+
+	
+}
+
+.jscarousal-contents-vertical > div > div > div .thumbnail-body > div
+{
+	width: 100px;
+	height: auto;
+	float: right; 
+	clear: right
+}
+
+.jscarousal-contents-vertical img
+{
+	width: 100%;
+	height: 40%;
+	border: solid 1px #7A7677;
+}
+
+/*Vertical Orientation CSS Ends*/
+
+/*Common*/
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
+.thumbnail-active
+{
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+	cursor: pointer;
+}
+.thumbnail-inactive
+{
+	filter: alpha(opacity=20);
+	opacity: 0.2;
+	cursor: pointer;
+}
+.thumbnail-text
+{
+	color: #7A7677;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	height:50px;
+	word-wrap:break-word;
+	padding: 2px 2px 2px 0px;
+}
+
+

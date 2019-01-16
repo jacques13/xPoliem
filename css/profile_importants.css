@@ -1,0 +1,231 @@
+.user{
+	background-color:#4899F7;
+	border: 0.3vw outset rgba(72, 153, 247, 0.72);
+}
+.nonuser{
+	background-color: rgba(116, 116, 116, 0.61);
+	border: 0.14vw dashed rgba(72, 72, 72, 0.6);
+	width: 29vw;
+}
+
+.follow_un{
+	left: 17.9vw;
+	top: 4.94vw;
+}	
+
+.Admire_Fav{
+	padding:0vw 0.5vw 0vw 0.5vw;
+	top:20.44vw;
+	margin:0.2vw;
+}
+#space_maker{
+	height:1.1vw;
+	width: 100%;
+}
+#POSTS{
+	background-color:rgba(153,153,153,0.6);
+	width:30vw;
+	height:auto;
+	padding-bottom: 0.1vw;
+	padding-top: 0.1vw;
+	-webkit-box-shadow: 0.2vw 0.2vw 0.7vw -0.09vw rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0.2vw 0.2vw 0.7vw -0.09vw rgba(50, 50, 50, 0.75);
+	box-shadow:         0.2vw 0.2vw 0.7vw -0.09vw rgba(50, 50, 50, 0.75);
+	border-radius:0.2vw;
+	font-size: 1vw;
+	margin: auto;
+}
+
+.lessen_font> textarea{
+	font-size: 1.1vw;
+}
+
+.lessen_font{
+	font-size: 1.1vw;
+}
+
+.add_shadow:hover {
+    cursor: pointer;
+	text-shadow: 0 0 1vw #000;
+}
+
+.read_delete{
+	font-size: 0.75vw;
+	height: 1.1vw;
+	line-height: 0.8vw;
+	width: 4vw;
+	border-radius: 0.3vw;
+	margin: 0.2vw 0.5vw 0.35vw 0vw;
+	float: right;
+}
+
+.delete_fix{
+	font-size: 0.9vw;
+	line-height: 0.9vw;
+	margin: 0 0.9vw;
+	height: 1vw;
+	width: auto;
+}
+.delete_fix_lrg{
+	font-size: 0.9vw;
+	line-height: 0.9vw;
+	margin: 1.25vw 0.9vw 0.35vw 0.9vw;
+	height: 1vw;
+	width: auto;
+}
+
+.hover_block{
+	display: none;
+	overflow: auto;
+	border-radius: 0.1vw;
+	-webkit-border-radius: 0.1vw;
+	-moz-border-radius: 0.1vw;
+	-o-border-radius: 0.1vw;
+	-ms-border-radius: 0.1vw;
+	box-shadow: 0px 0.1vw 0.5vw 0.1vw rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0px 0.1vw 0.5vw 0.1vw rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0px 0.1vw 0.5vw 0.1vw rgba(50, 50, 50, 0.1);
+	-o-box-shadow: 0px 0.1vw 0.5vw 0.1vw rgba(50, 50, 50, 0.1);
+	-ms-box-shadow: 0px 0.1vw 0.5vw 0.1vw rgba(50, 50, 50, 0.1);
+	font-size: 0.7vw;
+	font-weight: normal;
+	color:#000;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	position: absolute; 
+	left: 9.36vw;
+	top: 27vw;
+	z-index: 10000;
+	margin-left: 0; 
+	height: 11.5vw;
+	width: 10.5vw;
+	background-color: #fefefe; 
+	border-top: 0.1vw solid #e0e0e0;
+	border-bottom: 0.1vw solid #c8c8c8;
+	border-left: 0.1vw solid #e0e0e0;
+	border-right: 0.1vw solid #e0e0e0;
+}
+.hover_block_left{
+	left: 0.22vw;
+}
+.hover_block_right{ 
+	left: 9.36vw;
+}
+.hover_block .fav_fol_uname{
+	color: rgba(125, 125, 125, 1);
+	display: table-cell;
+	padding:0%;
+	list-style:none;
+	position: absolute;
+	height: 1em;
+	width: 7.2vw;
+	margin-left: 24%;
+	vertical-align: middle;
+	line-height: 1.25em;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.hover_block .content_item{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin: 5px 0px 5px 0px;
+	color: #101010;
+	cursor: pointer;
+	list-style-type: none;
+	background-color: #ffffff;
+	-ms-word-wrap: break-word;
+     word-wrap: break-word;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.hover_block .fav_fol_img{
+	display: table-cell;
+	list-style:none;
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	float:right;
+
+	vertical-align: middle;
+	line-height: 2.5em;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+
+.Admire_Fav:hover + .hover_block{
+	display: block;
+}
+.hover_block:hover{
+	display: block;
+}
+.hover_block h3 {
+  display: table-cell;
+  width: inherit;
+  padding: 4px 0 4px 0;
+  margin: 0 0 0 0;
+  background-color: #767676;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 13px;
+  border-top-left-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-right-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+}
+
+
+
+.tooltip {
+		border-bottom: 1px dotted #000000; color: #000000; outline: none;
+		cursor: help; text-decoration: none;
+		position: relative;
+		font-size: 0.8vw;
+		padding: 0.3vw 0.3vw;
+		bottom: 0.3vw;
+	}
+	.tooltip span {
+		margin-left: -999vw;
+		position: absolute;
+	}
+	.tooltip:hover span {
+		border-radius: 0.2vw 0.2vw; -moz-border-radius: 0.2vw; -webkit-border-radius: 0.2vw; 
+		box-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.1); -moz-box-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+		font-size:0.6vw;
+		color:#000;
+		font-family: Calibri, Tahoma, Geneva, sans-serif;
+		position: absolute; left: 0.8vw; top: 0vw; z-index: 10000;
+		margin-left: 0; width: auto; height: auto;
+	}
+	.tooltip:hover img {
+		border: 0; margin: -0.27vw 0vw 0vw -0.37vw;
+		float: left; position: absolute;
+	}
+	.tooltip:hover em {
+		font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+		display: block; padding: 0.2em 0 0.6em 0;
+	}
+	.classic { padding: 0.8em 1em; }
+	.custom { padding: 0.1vw 0.1vw 0.1vw 0.1vw; }
+	* html a:hover { background: transparent; }
+	.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+	.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+	.help { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+	.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+	.warning { background: #FFFFAA; border: 1px solid #FFAD33; }

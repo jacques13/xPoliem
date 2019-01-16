@@ -1,0 +1,255 @@
+.rg-image-wrapper{
+	position:relative;
+	padding:20px 30px;
+	background:transparent url(../images/black.png) repeat top left;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	min-height:20px;
+}
+.rg-image{
+	position:relative;
+	text-align:center;
+	line-height:0px;
+}
+.rg-image img{
+	max-height:100%;
+	max-width:100%;
+}
+.rg-image-nav a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000 url(../images/nav.png) no-repeat -20% 50%;
+	width:28px;
+	height:100%;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.3;
+	outline:none;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+.rg-image-nav a.rg-image-nav-next{
+	right:0px;
+	left:auto;
+	background-position:115% 50%;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 10px 10px 0px;
+}
+.rg-image-nav a:hover{
+	opacity:0.8;
+}
+.rg-caption {
+	text-align:center;
+	margin-top:15px;
+	position:relative;
+}
+.rg-caption p{
+	font-size:11px;
+	letter-spacing:2px;
+	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+	line-height:16px;
+	padding:0 15px;
+	text-transform:uppercase;
+}
+.rg-view{
+	height:30px;
+}
+.rg-view a{
+	display:block;
+	float:right;
+	width:16px;
+	height:16px;
+	margin-right:3px;
+	background:#464646 url(../images/views.png) no-repeat top left;
+	border:3px solid #464646;
+	opacity:0.8;
+}
+.rg-view a:hover{
+	opacity:1.0;
+}
+.rg-view a.rg-view-full{
+	background-position:0px 0px;
+}
+.rg-view a.rg-view-selected{
+	background-color:#6f6f6f;
+	border-color:#6f6f6f;
+}
+.rg-view a.rg-view-thumbs{
+	background-position:0px -16px;
+}
+.rg-loading{
+	width:46px;
+	height:46px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background:#000 url(../images/ajax-loader.gif) no-repeat center center;
+	margin:-23px 0px 0px -23px;
+	z-index:100;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.7;
+}
+.drag {
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.2);
+	cursor: grab;
+	background: dimgrey;
+	background-size: 150px 150px;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;	
+	overflow: hidden;
+	margin: 10px auto;
+	border-radius: 10px;
+width:90vw;
+	height:95vh;
+}
+
+.drag .item {
+	width: 135px;
+	height: 135px;
+	/*width:10vw;
+	height: 20vh;*/
+	display: inline-block;
+	margin: 20px;
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transform-style: preserve-3d;
+	perspective: 1000;
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 1000;
+	-moz-transform-style: preserve-3d;
+	-moz-perspective: 1000;
+	-o-transform-style: preserve-3d;
+	-o-perspective: 1000;
+	-ms-transform-style: preserve-3d;
+	-ms-perspective: 1000;
+	
+}
+
+.drag .item .front, .drag .item .back {
+	position: absolute;
+	top: 0; left: 0;
+	backface-visibility: hidden;
+	transition: all 0.2s ease-in;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-backface-visibility: hidden;
+	-moz-transition: all 0.2s ease-in;
+	-o-backface-visibility: hidden;
+	-o-transition: all 0.2s ease-in;
+	-ms-backface-visibility: hidden;
+	-ms-transition: all 0.2s ease-in;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	background-size: 135px 135px !important;
+	border-radius: 5px;
+	height: inherit;
+	width: inherit;
+}
+
+.drag .item .front:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.1), inset 0px 0px 30px rgba(255,255,255,0.3);	
+}
+
+.drag .item .back {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	background:#222;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px inset rgba(255,255,255,0.2);
+	box-shadow: inset 0 0 0px 4px rgba(255,255,255,0.1);
+	padding: 0px;
+	font-family: Arial, sans-serif;
+	color: #444;
+	
+}
+.drag .item .back  .p{padding:0px;margin-bottom:0px;}
+.drag .item .back a {
+	color: #06F;
+	border-bottom: 2px solid #023f46;
+	text-decoration: none;
+	font-weight: bold;
+	padding:0px;
+	margin:0px;
+}
+
+.drag .item .back a:hover {
+	color: #09F;	
+	border-bottom: 2px solid #0c717c;
+}
+
+.drag .clicked .back {
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+}
+
+.drag .clicked .front {
+	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);	
+	-ms-transform: rotateY(-180deg);
+}
+
+.drag .wrapper {
+	float: left;
+	white-space: nowrap;
+}
+
+.play-button {
+	border: 7px solid rgba(255,255,255,0.3);
+	width: 30px;
+	border-radius: 80px;
+	height: 45px;
+	padding: 16px 25px;
+	box-shadow: 0 0;
+	font-size: 40px;
+	margin: 10px 0 0 10px;
+	color: rgba(255,255,255,0.3);
+	transition: all 1s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1), inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+.play-button:hover {
+	border: 7px solid rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.5);
+}
+
+@media only screen and (max-device-width: 480px) { 
+
+	.drag {
+		width:100vw;
+		height:100vh;
+		border-radius: 0;
+		margin: 0 !important;
+	}
+	
+	.drag .item {
+		margin: 7px 11px;
+		opacity: 1;
+		width:10vw;
+		height: 20vh;
+	}
+	
+}
+
+
+
+/* =================== IGNORE BEYOND THIS POINT == */

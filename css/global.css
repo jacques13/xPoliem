@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Georgia, "Times New Roman", Times, serif}
+	.upload{width:60vw;
+	background:rgba(130, 130, 130,0.6);
+	border: 1px solid #ddd;
+	padding:40px;
+	margin: 10px auto;
+	}
+.upload fieldset{
+	border:0;
+	padding:0;
+	margin-bottom:10px;
+	
+	
+	}
+		 input[type = "button"]{
+	box-sizing: content-box;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+width:5vw;
+height:3vh;
+min-width:4vw;
+min-height:2vh;
+max-width:6vw;
+max-height:5vh;
+border: 0px none;
+display: inline-block;
+line-height: 1;
+padding: 5px;
+text-decoration: none;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: #0070BA;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+
+  -webkit-transition: all .5s;
+	
+	
+	}
+	
+	 input[type = "submit"]{
+	box-sizing: content-box;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+width:5vw;
+height:3vh;
+min-width:4vw;
+min-height:2vh;
+max-width:6vw;
+max-height:5vh;
+border: 0px none;
+display: inline-block;
+line-height: 1;
+padding: 5px;
+text-decoration: none;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: #0070BA;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+
+  -webkit-transition: all .5s;
+	
+	
+	}
+	input[type = "submit"]:hover{
+		color: rgb(255, 255, 255);
+	background-color: #6FC4FC;
+	
+	}
+	input[type = "button"]:hover{
+		color: rgb(255, 255, 255);
+	background-color: #6FC4FC;
+	
+	}
+	
+.upload fieldset legend{
+	font-size:1.2em;
+	margin-bottom:10px;
+	
+	}
+	.bar{
+		width:100%;
+		background:#eee;
+		padding:3px;
+		margin-bottom:10px;
+		box-shadow:inset 0 1px 3px; rgba(0,0,0,.2);
+		box-sizing:border-box;
+		}
+		
+		.bar-fill{
+		height:20px;
+		display:block;
+		border-radius:3px;
+		background:cornflowerblue;
+		width:0;
+		
+		transition:width 0.8s ease;
+		}
+		.bar-fill-text{
+		color:#fff;
+		padding:3px;
+		}
+		.uploads a ,uploads span{
+			display:block;
+		}
